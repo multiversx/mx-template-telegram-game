@@ -1,0 +1,7 @@
+node_modules
+app/frontend/node_modules
+app/lib/node_modules
+app/service/node_modules
+app/frontend/dist
+app/lib/build
+app/service/dist

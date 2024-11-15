@@ -1,0 +1,51 @@
+{
+  "name": "xcities-lib",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack",
+    "start:dev": "npm-watch dev",
+    "doc": "typedoc --out ./docs ./src/clickerLib.ts ./src/interfaces.ts"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,html,scss",
+      "quiet": false
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack-dev-server": "5.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "npm-watch": "^0.13.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "ts-loader": "^9.5.1",
+    "typedoc": "^0.26.10",
+    "typedoc-plugin-md": "^0.3.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@multiversx/sdk-core": "^13.11.0",
+    "@multiversx/sdk-native-auth-client": "^1.0.9",
+    "@multiversx/sdk-wallet": "^4.6.0",
+    "@twa-dev/sdk": "^7.10.1",
+    "axios": "^1.7.7",
+    "bignumber.js": "^9.1.2",
+    "browserify-fs": "^1.0.0",
+    "path": "^0.12.7",
+    "protobufjs": "^7.4.0",
+    "socket.io-client": "^4.8.0",
+    "vm-browserify": "^1.1.2"
+  }
+}
