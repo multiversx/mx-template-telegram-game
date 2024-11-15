@@ -54,7 +54,7 @@ export class Preloader extends BaseScene {
 
         this.ClickerLib.init({
             walletStorageKey: "mxClickerWallet",
-            gameApiUrl: "wss://f460ce2a6ddc.ngrok.app",
+            gameApiUrl: "wss://3a599743268b.ngrok.app",
             apiUrl: "https://api.multiversx.com",
         });
     }

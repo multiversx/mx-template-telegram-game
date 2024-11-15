@@ -129,10 +129,6 @@ export class ClickerLib {
       : Number.MAX_SAFE_INTEGER;
   }
 
-  public consoleL() {
-    console.log("12345");
-  }
-
   /**
    *
    * @description Called after init()

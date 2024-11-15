@@ -8,7 +8,7 @@ module.exports = {
     main: "./src/clickerLib.ts", // Your entry point
   },
   output: {
-    path: path.resolve(__dirname, "./build"),
+    path: path.resolve(__dirname, "../frontend/public"),
     filename: "[name]-bundle.js",
   },
   resolve: {
@@ -37,14 +37,5 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
-  },
-
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "build"),
-    },
-    hot: true,
-    compress: true,
-    port: 4002,
   },
 };

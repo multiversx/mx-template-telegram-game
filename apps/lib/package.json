@@ -21,7 +21,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "webpack-dev-server": "5.1.0",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
