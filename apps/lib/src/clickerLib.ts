@@ -148,7 +148,6 @@ export class ClickerLib {
       this.wallet = JSON.parse(localWallet);
       this.socket = new ClickerWebSocket(
         `${this.config.gameApiUrl}/clickerGame`,
-        // "wss://loyal-clemence-andreigiura-0330035b.koyeb.app/clickerGame",
         await NativeAuth.generateNativeAuthToken(
           this.config.apiUrl,
           this.wallet
