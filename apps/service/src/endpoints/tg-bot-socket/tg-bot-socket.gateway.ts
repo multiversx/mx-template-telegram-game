@@ -18,6 +18,7 @@ import { Cache } from 'cache-manager';
 import { Throttle } from '@nestjs/throttler';
 import { WsThrottlerGuard } from './WsThrottleGuard';
 import { IPlainTransactionObject } from '@multiversx/sdk-core/out';
+import { gameConfig } from './constants';
 
 @WebSocketGateway({ namespace: 'clickerGame', cors: true })
 export class TgBotSocketGateway implements OnGatewayInit {
@@ -28,7 +29,7 @@ export class TgBotSocketGateway implements OnGatewayInit {
 
   async afterInit(@ConnectedSocket() socket: Socket) {
     const nativeAuth = new NativeAuthServer({
-      apiUrl: 'http://api.multiversx.com',
+      apiUrl: gameConfig.apiUrl,
       maxExpirySeconds: 7200,
       acceptedOrigins: ['*'],
     });
